@@ -7,3 +7,4 @@ output and the intermediate nodes. The derivative of L(output) with respect to e
 In neuronet, the loss function is the output L.
 We're not really interested in the derivative of L with respect to original data, since orignal data are fixed. We're more interested in the weights, because we're going to change them based on gradient.
 You know that d has direct impact on L. You also know c has direct impact on d. You should feel somehow there is a thing between c and L. That thing is what we want to get now.
+Multiplication of local derivatives based on chain rule
