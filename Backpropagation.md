@@ -35,7 +35,17 @@ Use a single value to somehow measure the whole performance of the neural networ
 
   Note:
   - To initialize a layer, it takes in nin(number of input, d), nout(number of output, how many neurons you wanna have). The initialization is basically gives you a list of nueron initialization(a list of w(w is also a list) and b to construct future neurons). 
-  - call function basically for every neuron initialization(different w vector and b), call it with same input x vector. Returns a list of neuron values. 
+  - call function basically for every neuron initialization(different w vector and b), call it with same input x vector. Returns a list of neuron values.
+  - the relationship between nin and x: nin is the number of elements in call function's input x vector.
+
+- **Initialization of MLP(multiple layers)**
+  ![image](https://github.com/GloriaJingCQ/CPSC-340-note/assets/87431812/b36ee09e-4575-4827-809e-cc8ffdb15aed)
+
+  Note:
+  - We take two parameters to initialize. nin: the number of input(original input layer), nouts(a list. i.e. [4,4,1], means this network we're building has 3 output layers(4 neurons one layer, 4..., 1 neurons one layer)).
+  - The initialization gives a list of layer initialization(a set of w list and b). each layer list takes 2 parameters, #input, #output. i.e. MLP(3, [4,4,1]), layer initialization list is [layer(3,4), layer(4,4), layer(4,1)], layer(3,4) gives us a 4 w vectors and 4 b, each w vector has 3 elements.
+  - The call function, we do for layer call function each layer, remember that layer's call function gives us a list of neuron values. We use the output list of neuron values as next layer's input vector x, using next layer's initialization(the right w and b).
+  - Returns the final layer(a set of neuron values)
 
 Some notes:
 - Pytorch tensor also has .data/ .grad. If you do o.data.item(), you get the number getting rid of the tensor.
