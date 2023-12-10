@@ -1,9 +1,9 @@
-Explanation of gradient, and why it's important:
+1. **Explanation of gradient, and why it's important**:
 - We have initial input a,b. We have final input g. We want to know the gradient(derivatives), basicaly means we want to know how the change of a,b will influence g.
 The function sensitivity regarding to the slightly change if a and b (Go back to the definition of derivative instead of solving derive derivative functions). How the function responds to the slightly change of our input, ie x
 (f(x+h) - f(x))/h    (the change of my function)/(the change of my input)
 
-BackPropagation Intuiton: 
+2. **BackPropagation Intuiton**: 
 - We're going through layers by layers to reversely compute the the gradient regarding
 output and the intermediate nodes. The derivative of L(output) with respect to each layer input(intermediate nodes).
 
@@ -13,14 +13,22 @@ You know that d has direct impact on L. You also know c has direct impact on d. 
 Multiplication of local derivatives based on chain rule
 
 - Loss Function:
-- Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have
+Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have
 
 
-Implementation of neural network:
-- initialization of neuron class:
+3. **Implementation of neural network**:
+- **initialization of neuron class**:
+  ![image](https://github.com/GloriaJingCQ/CPSC-340-note/assets/87431812/67f6fe96-1836-43fd-aa28-60119d67ca6d)
+  
+  Note:
+  - To initialize one neuron instance, we have a set of w (#d) and a bias value.
+  - The value of the neuron is sum(w*x) + bias
+  - The call function of a neuron takes an input x (one example with d dimensions), and pairwise mutiply w.
+  - n is the neuron instance, n(x) means you did the call function of the neuron instance
 
 
 
 
-- Some notes:
+
+Some notes:
 - Pytorch tensor also has .data/ .grad. If you do o.data.item(), you get the number getting rid of the tensor.
