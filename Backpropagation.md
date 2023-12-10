@@ -1,3 +1,5 @@
+Study note after watching Andrej's video: https://www.youtube.com/watch?v=VMj-3S1tku0&t=6666s. Amazing video!
+
 1. **Explanation of gradient, and why it's important**:
 - We have initial input a,b. We have final input g. We want to know the gradient(derivatives), basicaly means we want to know how the change of a,b will influence g.
 The function sensitivity regarding to the slightly change if a and b (Go back to the definition of derivative instead of solving derive derivative functions). How the function responds to the slightly change of our input, ie x
