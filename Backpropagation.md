@@ -15,7 +15,7 @@ You know that d has direct impact on L. You also know c has direct impact on d. 
 Multiplication of local derivatives based on chain rule
 
 - Loss Function:
-Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have
+A single number to measure how neural-net is performing. Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have
 
 
 3. **Implementation of Neural Network**:
