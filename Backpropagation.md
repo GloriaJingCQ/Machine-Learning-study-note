@@ -16,19 +16,24 @@ Multiplication of local derivatives based on chain rule
 Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have
 
 
-3. **Implementation of neural network**:
-- **initialization of neuron class**:
+3. **Implementation of Neural Network**:
+   
+   (Initialization first(i.e. n = ...), having w and b prepared. Then do n(x), to return neuron value or a layer(a set of neuron values))
+- **Initialization of Neuron Class**:
   ![image](https://github.com/GloriaJingCQ/CPSC-340-note/assets/87431812/67f6fe96-1836-43fd-aa28-60119d67ca6d)
   
   Note:
-  - To initialize one neuron instance, we have a set of w (#d) and a bias value.
+  - By initializing one neuron instance, we have a set(list) of w (#d) and a bias value for constructing the neuron. The parameter initialization takes in is nin, which is just how many input or for an example x_i, it's dimentionality. 
   - The value of the neuron is sum(w*x) + bias
-  - The call function of a neuron takes an input x (one example with d dimensions), and pairwise mutiply w.
+  - The call function of a neuron takes an input x (one example with d dimensions, a vector), and pairwise mutiply w. The output is a neuron value.
   - n is the neuron instance, n(x) means you did the call function of the neuron instance
 
+- **Initialization of Layer Class**
+  ![image](https://github.com/GloriaJingCQ/CPSC-340-note/assets/87431812/c1fb92bb-1721-4c26-8b5d-dead277ce641)
 
-
-
+  Note:
+  - To initialize a layer, it takes in nin(number of input, d), nout(number of output, how many neurons you wanna have). The initialization is basically gives you a list of nueron initialization(a list of w(w is also a list) and b to construct future neurons). 
+  - call function basically for every neuron initialization(different w vector and b), call it with same input x vector. Returns a list of neuron values. 
 
 Some notes:
 - Pytorch tensor also has .data/ .grad. If you do o.data.item(), you get the number getting rid of the tensor.
