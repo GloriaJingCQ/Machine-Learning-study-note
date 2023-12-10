@@ -15,7 +15,7 @@ You know that d has direct impact on L. You also know c has direct impact on d. 
 Multiplication of local derivatives based on chain rule
 
 - Loss Function:
-A single number to measure how neural-net is performing. Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have
+A single number to measure how neural-net is performing. Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have. When loss is low, the loss is doing what you want it to do, solve the problem you want to solve
 
 
 3. **Implementation of Neural Network**:
@@ -49,3 +49,4 @@ A single number to measure how neural-net is performing. Use a single value to s
 
 Some notes:
 - Pytorch tensor also has .data/ .grad. If you do o.data.item(), you get the number getting rid of the tensor.
+- Loss function is just another built up upon our network and our predictions. loss is something = sum((ypred - y)**2). So we adjust all the w based on the gradient of loss respond to that w makes sense.
