@@ -11,4 +11,4 @@ Multiplication of local derivatives based on chain rule
 
 - Pytorch tensor also has .data/ .grad. If you do o.data.item(), you get the number getting rid of the tensor
 
-- Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so!
+- Use a single value to somehow measure the whole performance of the neural network. -> We use loss function to do so! The more off, the larger loss we will have
