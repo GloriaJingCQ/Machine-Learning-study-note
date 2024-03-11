@@ -1,7 +1,7 @@
 Learning Resources:
-https://www.pinecone.io/learn/vector-embeddings-for-developers/
-https://jalammar.github.io/illustrated-word2vec/
-https://www.pinecone.io/learn/vector-database/
+https://www.pinecone.io/learn/vector-embeddings-for-developers/ \\
+https://jalammar.github.io/illustrated-word2vec/ \\
+https://www.pinecone.io/learn/vector-database/ \\
 
 # Vector Embeddings
 Vector Embedding is actually for a automatic feature engineering. We're using a pretrained model to help us filter the most relevant features.
