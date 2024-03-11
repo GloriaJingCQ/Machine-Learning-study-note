@@ -1,3 +1,8 @@
+Learning Resources:
+https://www.pinecone.io/learn/vector-embeddings-for-developers/
+https://jalammar.github.io/illustrated-word2vec/
+https://www.pinecone.io/learn/vector-database/
+
 # Vector Embeddings
 Vector Embedding is actually for a automatic feature engineering. We're using a pretrained model to help us filter the most relevant features.
 ## Problems trying to solve:
@@ -11,6 +16,8 @@ We want to make sure when we turn data to mathematically vectors, their original
 still do the activation functions, etc.
 - An example: 
 word2vec: king-man+woman ~= queen
+Details from https://www.pinecone.io/learn/vector-embeddings-for-developers/:
+As we saw with word2vec, within the context of the model, vectors that are close together have a contextual similarity, whereas far-apart vectors are different from one another. That’s what gives our vector meaning — its relationship with other vectors in the vector space depends on how the embedding model “understands” the domain it was trained on.
 
 
 
