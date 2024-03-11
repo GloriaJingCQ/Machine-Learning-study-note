@@ -16,7 +16,7 @@ We want to make sure when we turn data to mathematically vectors, their original
 still do the activation functions, etc.
 - An example: 
 word2vec: king-man+woman ~= queen
-Details from https://www.pinecone.io/learn/vector-embeddings-for-developers/:
+Details from https://www.pinecone.io/learn/vector-embeddings-for-developers/: <br>
 As we saw with word2vec, within the context of the model, vectors that are close together have a contextual similarity, whereas far-apart vectors are different from one another. That’s what gives our vector meaning — its relationship with other vectors in the vector space depends on how the embedding model “understands” the domain it was trained on.
 
 
