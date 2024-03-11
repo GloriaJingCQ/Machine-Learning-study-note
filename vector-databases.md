@@ -1,4 +1,4 @@
-Learning Resources:
+Learning Resources: <br>
 https://www.pinecone.io/learn/vector-embeddings-for-developers/ <br>
 https://jalammar.github.io/illustrated-word2vec/ <br>
 https://www.pinecone.io/learn/vector-database/ <br>
