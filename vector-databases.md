@@ -15,8 +15,8 @@ We want to make sure when we turn data to mathematically vectors, their original
 -  We transform data to vectors using an embedding model which is trained in a neural network(supervised training). Instead of inputs to a labeled output, we do inputs to another inputs vector, basically we removed the last layer in the neural network, but we
 still do the activation functions, etc.
 - An example: 
-word2vec: king-man+woman ~= queen
-Details from https://www.pinecone.io/learn/vector-embeddings-for-developers/: <br>
+word2vec: king-man+woman ~= queen  <br>
+Details from https://www.pinecone.io/learn/vector-embeddings-for-developers/:  <br>
 As we saw with word2vec, within the context of the model, vectors that are close together have a contextual similarity, whereas far-apart vectors are different from one another. That’s what gives our vector meaning — its relationship with other vectors in the vector space depends on how the embedding model “understands” the domain it was trained on.
 
 
