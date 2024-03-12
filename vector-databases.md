@@ -2,7 +2,7 @@ Learning Resources: <br>
 https://www.pinecone.io/learn/vector-embeddings-for-developers/ <br>
 https://jalammar.github.io/illustrated-word2vec/ <br>
 https://www.pinecone.io/learn/vector-database/ <br>
-https://www.gomomento.com/blog/what-is-a-vector-index <br>
+https://www.datastax.com/guides/what-is-a-vector-index <br>
 https://medium.com/@bindubc/scatter-gather-7122d176757a
 
 # Vector Embeddings
